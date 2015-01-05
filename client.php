@@ -58,7 +58,7 @@
 		"contact_billing" => $contact["id"], 
 	    );
 	    $responseDomainAdd = $api->DomainAdd($domainInfo);
-	    if(!empty($responseDomainAdd->$domain->error)) ErrorReport($responseDomainAdd->$domain->error);
+	    if(!empty($responseDomainAdd->error)) ErrorReport($responseDomainAdd->error);
 	} 
     } 
 
